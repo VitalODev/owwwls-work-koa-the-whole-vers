@@ -1,0 +1,36 @@
+{
+  "name": "owls-work-koa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-vue-libs": "^3.0.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.2.0",
+    "@koa/cors": "2",
+    "crypto": "^1.0.1",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-favicon": "^2.0.1",
+    "koa-passport": "^4.1.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.1",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.4.0",
+    "nodemailer": "^5.1.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

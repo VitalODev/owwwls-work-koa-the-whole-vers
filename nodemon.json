@@ -1,0 +1,11 @@
+{
+  "ignore": ["node_modules"],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "execMap": {
+    "js": "babel-node"
+  },
+  "ext": ".js,.json",
+  "watch": "./src"
+}

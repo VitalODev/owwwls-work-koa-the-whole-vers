@@ -6,12 +6,16 @@ import cors from '@koa/cors'
 import favicon from 'koa-favicon'
 import serve from 'koa-static'
 import config from './config'
+import range from 'koa-range'
 import router from './router'
 
 const app = new Koa()
 
 mongoose.Promise = Promise
 mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true, useCreateIndex: true })
+
+// chrome can't handle rewinding without Range head
+app.use(range)
 
 app.use(bodyParser())
 
